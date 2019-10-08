@@ -1,12 +1,36 @@
-$primary: #fff000;
+$primary: #3095ff;
+$secondary: white;
+$profit: limegreen;
+$expenses: red;
 
-body {
-  background: $primary;
-  user-select: none;
-  display: grid;
 
+body{
+  margin: 0;
+  box-sizing: border-box;
 }
 
-nav{
+nav {
   display: flex;
+  justify-content: center;
+  background-color: $primary;
+  width: 100%;
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 56px;
+    padding: 1%;
+
+    .navLinks{
+      text-decoration: none;
+      color: $secondary;
+    }
+  }
+}
+
+.Graph_wrapper{
+  margin-top: 5%;
+  border: solid 1px black;
+
 }
