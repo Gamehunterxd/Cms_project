@@ -1,4 +1,9 @@
 @import "colors";
+@mixin flexCenter($justify: center){
+  display: flex;
+  justify-content: $justify;
+}
+
 
 body{
   margin: 0;
@@ -6,18 +11,15 @@ body{
 }
 
 nav {
-  display: flex;
-  justify-content: center;
+  @include flexCenter;
   background-color: $primary;
   width: 100%;
 
   .container {
-    display: flex;
-    justify-content: space-around;
+    @include flexCenter(space-around);
     width: 100%;
     font-size: 28px;
     padding: 1%;
-
     .navLinks{
       text-decoration: none;
       color: $secondary;
@@ -26,8 +28,7 @@ nav {
 }
 
 .graph_container {
-  display: flex;
-  justify-content: center;
+  @include flexCenter;
 
   .Graph_wrapper {
     margin-top: 5%;
@@ -37,8 +38,7 @@ nav {
   }
 }
 .product_wrapper{
-  display: flex;
-  justify-content: center;
+  @extend .graph_container;
 
   .product_container{
     margin-top: 5%;
@@ -47,27 +47,22 @@ nav {
     padding: 3%;
     .product{
       h2{
-        display: flex;
-        justify-content: center;
+        @extend .graph_container;
       }
       p{
-        display: flex;
-        justify-content: center;
+        @include flexCenter;
         font-size: 12px;
       }
       .product_pic{
-        display: flex;
-        justify-content: center;
+        @include flexCenter;;
         margin-bottom: 5%;
       }
       h3{
-        display: flex;
-        justify-content: center;
+        @extend .graph_container;
       }
 
       .price_wrapper{
-        display: flex;
-        justify-content: center;
+        @extend .graph_container;
 
         .btn{
           background-color: $primary;
