@@ -1,2 +1,2 @@
-body{margin:0;box-sizing:border-box}nav{justify-content:center;background-color:#3095ff}nav,nav .container{display:flex;width:100%}nav .container{justify-content:space-around;font-size:56px;padding:1%}nav .container .navLinks{text-decoration:none;color:#fff}.Graph_wrapper{margin-top:5%;border:1px solid #000}
+body{margin:0;box-sizing:border-box}nav{justify-content:center;background-color:#3095ff}nav,nav .container{display:flex;width:100%}nav .container{justify-content:space-around;font-size:28px;padding:1%}nav .container .navLinks{text-decoration:none;color:#fff}.graph_container{display:flex;justify-content:center}.graph_container .Graph_wrapper{margin-top:5%;border:1px solid #000;width:80%;height:80%}
 /*# sourceMappingURL=styles.css.map */

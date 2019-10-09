@@ -19,7 +19,7 @@ nav {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    font-size: 56px;
+    font-size: 28px;
     padding: 1%;
 
     .navLinks{
@@ -29,8 +29,14 @@ nav {
   }
 }
 
-.Graph_wrapper{
-  margin-top: 5%;
-  border: solid 1px black;
+.graph_container {
+  display: flex;
+  justify-content: center;
 
+  .Graph_wrapper {
+    margin-top: 5%;
+    border: solid 1px black;
+    width: 80%;
+    height: 80%;
+  }
 }
