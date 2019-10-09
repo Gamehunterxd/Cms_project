@@ -1,8 +1,4 @@
-$primary: #3095ff;
-$secondary: white;
-$profit: limegreen;
-$expenses: red;
-
+@import "colors";
 
 body{
   margin: 0;
@@ -35,8 +31,51 @@ nav {
 
   .Graph_wrapper {
     margin-top: 5%;
-    border: solid 1px black;
+    border: $box;
     width: 80%;
     height: 80%;
+  }
+}
+.product_wrapper{
+  display: flex;
+  justify-content: center;
+
+  .product_container{
+    margin-top: 5%;
+    border: $box;
+    width: 80%;
+    padding: 3%;
+    .product{
+      h2{
+        display: flex;
+        justify-content: center;
+      }
+      p{
+        display: flex;
+        justify-content: center;
+        font-size: 12px;
+      }
+      .product_pic{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5%;
+      }
+      h3{
+        display: flex;
+        justify-content: center;
+      }
+
+      .price_wrapper{
+        display: flex;
+        justify-content: center;
+
+        .btn{
+          background-color: $primary;
+          padding: 5px 10px;
+          margin: 0 10px;
+          border-radius: 25%;
+        }
+      }
+    }
   }
 }

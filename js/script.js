@@ -1,4 +1,19 @@
 $(document).ready(function () {
+
+    let counter = $(".counter");
+
+    $(".plus").click(function () {
+        console.log(Clicked)
+        return counter+1;
+    });
+
+
+
+
+
+
+
+
     google.charts.load('current', {'packages':['corechart']});
     google.charts.load('current', {'packages':['bar']});
     google.charts.setOnLoadCallback(drawChart);
@@ -49,4 +64,5 @@ $(document).ready(function () {
         // Convert the Classic options to Material options.
         chart.draw(data, google.charts.Bar.convertOptions(options));
     }
+
 });
