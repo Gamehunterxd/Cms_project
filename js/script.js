@@ -1,22 +1,10 @@
 $(document).ready(function () {
 
-    let counter = $(".counter");
-
-    $(".plus").click(function () {
-        console.log(Clicked)
-        return counter+1;
-    });
-
-
-
-
-
-
-
-
     google.charts.load('current', {'packages':['corechart']});
     google.charts.load('current', {'packages':['bar']});
     google.charts.setOnLoadCallback(drawChart);
+    google.charts.setOnLoadCallback(drawStuff);
+    google.charts.setOnLoadCallback(drawPie);
 
     function drawChart() {
         var data = google.visualization.arrayToDataTable([
@@ -37,8 +25,6 @@ $(document).ready(function () {
 
         chart.draw(data, options);
     }
-    google.charts.load('current', {'packages':['bar']});
-    google.charts.setOnLoadCallback(drawStuff);
 
     function drawStuff() {
         var data = new google.visualization.arrayToDataTable([
@@ -63,6 +49,25 @@ $(document).ready(function () {
         var chart = new google.charts.Bar(document.getElementById('sales'));
         // Convert the Classic options to Material options.
         chart.draw(data, google.charts.Bar.convertOptions(options));
+    }
+
+    function drawPie() {
+
+        var data = google.visualization.arrayToDataTable([
+            ['Overall sales', 'sales'],
+            ['product #1',     91725],
+            ['product #2',      12359],
+            ['product #3',     129912]
+
+        ]);
+
+        var options = {
+            title: 'My Daily Activities'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('overall'));
+
+        chart.draw(data, options);
     }
 
 });

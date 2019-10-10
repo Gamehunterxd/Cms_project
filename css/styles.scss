@@ -1,3 +1,7 @@
+$queriedVariables: 50%;
+
+
+
 @import "colors";
 @mixin flexCenter($justify: center){
   display: flex;
@@ -72,5 +76,12 @@ nav {
         }
       }
     }
+  }
+}
+
+@media screen and (min-width: 786px) {
+  
+  .graph_container{
+    width: 100%;
   }
 }
