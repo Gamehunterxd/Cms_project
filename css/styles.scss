@@ -12,6 +12,8 @@ $queriedVariables: 50%;
 body{
   margin: 0;
   box-sizing: border-box;
+  font-family: "Agency FB";
+  text-align: center;
 }
 
 nav {
@@ -85,4 +87,8 @@ nav {
     width: 50%;
     margin-left: 25%;
   }
+  h2{
+    font-size: 300%;
+  }
+
 }
